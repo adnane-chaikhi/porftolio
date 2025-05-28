@@ -2,56 +2,51 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import profilePic from '../../../public/me.jpeg' //
+import profilePic from '../../../public/me.jpeg'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 px-6 py-20"
-    >
-      <div className="flex flex-col md:flex-row items-center gap-16 max-w-7xl w-full">
-        {/* 🖼️ Profile Image - Left */}
+    <section id="about" className="min-h-screen bg-[#0f1117] text-green-400 font-mono px-6 py-24">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        {/* 📷 Profile Picture */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="w-[400px] h-[600px] overflow-hidden rounded-xl border-4 border-indigo-500 shadow-lg"
+          transition={{ duration: 0.5 }}
+          className="flex-shrink-0 border-4 border-green-500 rounded-xl overflow-hidden w-[350px] h-[500px] shadow-lg"
         >
-          <Image
-            src={profilePic}
-            alt="Adnane Chaikhi"
-            width={400}
-            height={600}
-            className="w-full h-full object-cover"
-          />
+          <Image src={profilePic} alt="Adnane Chaikhi" width={350} height={500} className="object-cover w-full h-full" />
         </motion.div>
 
-        {/* 📝 Text Content - Right */}
+        {/* 🧠 Developer Code Section */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="text-white max-w-xl"
+          transition={{ duration: 0.5 }}
+          className="w-full bg-[#0e1015] border border-gray-800 rounded-lg p-6 md:p-10 text-base leading-relaxed"
         >
-          <h2 className="text-5xl font-extrabold mb-4">About Me</h2>
-          <h3 className="text-xl text-indigo-400 font-semibold mb-6">
-            Adnane Chaikhi – Fullstack Developer
-          </h3>
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            I specialize in building fullstack applications using modern frameworks like
-            <span className="text-indigo-400 font-medium"> React, Next.js, Tailwind CSS</span> and
-            <span className="text-indigo-400 font-medium"> Spring Boot</span>. I’m passionate about clean code, fast UI, and solving real-world problems with software.
-          </p>
+          <div className="text-lime-400 mb-4">// About Me</div>
+          <div className="space-y-1">
+            <div><span className="text-gray-500">1 </span>const <span className="text-lime-400">aboutMe</span> = &#123;</div>
+            <div><span className="text-gray-500">2 </span>  name: <span className="text-yellow-300">"Adnane Chaikhi"</span>,</div>
+            <div><span className="text-gray-500">3 </span>  role: <span className="text-yellow-300">"Fullstack Developer"</span>,</div>
+            <div><span className="text-gray-500">4 </span>  location: <span className="text-yellow-300">"Morocco"</span>,</div>
+            <div><span className="text-gray-500">5 </span>  stack: [<span className="text-cyan-300">"React"</span>, <span className="text-cyan-300">"Next.js"</span>, <span className="text-cyan-300">"Tailwind"</span>, <span className="text-cyan-300">"Spring Boot"</span>],</div>
+            <div><span className="text-gray-500">6 </span>  passion: <span className="text-yellow-300">"Building beautiful, fast UIs & solving real-world problems"</span>,</div>
+            <div><span className="text-gray-500">7 </span>  links: &#123;</div>
+            <div><span className="text-gray-500">8 </span>    linkedin: <span className="text-blue-400">"linkedin.com/in/yourprofile"</span>,</div>
+            <div><span className="text-gray-500">9 </span>    github: <span className="text-blue-400">"github.com/yourprofile"</span>,</div>
+            <div><span className="text-gray-500">10</span>    email: <span className="text-blue-400">"your@email.com"</span></div>
+            <div><span className="text-gray-500">11</span>  &#125;</div>
+            <div><span className="text-gray-500">12</span>&#125;</div>
+          </div>
 
           {/* Social Icons */}
-          <div className="flex gap-6 text-2xl text-gray-300">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" className="hover:text-indigo-400 transition"><FaLinkedin /></a>
-            <a href="https://github.com/yourprofile" target="_blank" className="hover:text-indigo-400 transition"><FaGithub /></a>
-            <a href="mailto:your@email.com" className="hover:text-indigo-400 transition"><FaEnvelope /></a>
+          <div className="mt-6 flex gap-5 text-2xl text-green-400">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" className="hover:text-lime-400"><FaLinkedin /></a>
+            <a href="https://github.com/yourprofile" target="_blank" className="hover:text-lime-400"><FaGithub /></a>
+            <a href="mailto:your@email.com" className="hover:text-lime-400"><FaEnvelope /></a>
           </div>
         </motion.div>
       </div>

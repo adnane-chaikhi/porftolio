@@ -4,15 +4,16 @@ import { Typewriter } from 'react-simple-typewriter'
 import { FaArrowRight } from 'react-icons/fa'
 
 export default function Hero() {
+  const myName = "{adnane chaikhi} ";
   return (
     <section
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black text-white px-6"
     >
-      <div className="text-center max-w-2xl">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-          Hi, I'm{' '}
-          <span className="text-cyan-400">Adnane Chaikhi</span>
+      <div className="text-center  w-full">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 w-full">
+             Hi, I'm{' '}
+          <span className="text-cyan-400">{myName}</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl font-medium text-gray-300">
