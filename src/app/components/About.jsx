@@ -24,7 +24,7 @@ export default function About() {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full bg-[#0e1015] border border-gray-800 rounded-lg p-6 md:p-10 text-base leading-relaxed"
+          className="w-full bg-[#0e1015] border border-gray-800 rounded-lg p-6 md:p-10 text-base leading-relaxed whitespace-pre-wrap break-words"
         >
           <div className="text-lime-400 mb-4">// About Me</div>
           <div className="space-y-1">
@@ -32,7 +32,7 @@ export default function About() {
             <div><span className="text-gray-500">2 </span>  name: <span className="text-yellow-300">"Adnane Chaikhi"</span>,</div>
             <div><span className="text-gray-500">3 </span>  role: <span className="text-yellow-300">"Fullstack Developer"</span>,</div>
             <div><span className="text-gray-500">4 </span>  location: <span className="text-yellow-300">"AL HOCEIMA,Morocco"</span>,</div>
-            <div><span className="text-gray-500">5 </span>  stack: [<span className="text-cyan-300">"React"</span>, <span className="text-cyan-300">"Next.js"</span>, <span className="text-cyan-300">"Tailwind"</span>, <span className="text-cyan-300">"Spring Boot"</span> ,<span className="text-cyan-300">"PHP"</span>,<span className="text-cyan-300">"MySQL"</span>,<span className="text-cyan-300">"Docker"</span>,<span className="text-cyan-300">"Git/Github"</span>,<span className="text-cyan-300">"AWS"</span>],</div>
+            <div><span className="text-gray-500">5 </span>  stack: [<span className="text-cyan-300">"React"</span>, <span className="text-cyan-300">"Next.js"</span>, <span className="text-cyan-300">"Tailwind"</span>, <span className="text-cyan-300">"Spring Boot"</span>   <br />  ,<span className="text-cyan-300">"PHP"</span>,<span className="text-cyan-300">"MySQL"</span>,<span className="text-cyan-300">"Docker"</span>,<span className="text-cyan-300">"Git/Github"</span>,<span className="text-cyan-300">"AWS"</span>],</div>
             <div><span className="text-gray-500">6 </span>  passion: <span className="text-yellow-300">"Building beautiful, fast UIs & solving real-world problems"</span>,</div>
             <div><span className="text-gray-500">7 </span>  links: &#123;</div>
             <div><span className="text-gray-500">8 </span>    linkedin: <span className="text-blue-400">"linkedin.com/in/adnane-chaikhi"</span>,</div>
