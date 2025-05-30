@@ -14,7 +14,7 @@ export default function useScrollSpy(sectionIds) {
         }
       },
       {
-        rootMargin: '0px 0px -60% 0px', // Adjusts when section is considered "active"
+        rootMargin: '0px 0px -30% 0px', // Adjusts when section is considered "active"
         threshold: 0.4 // % of section in view to count as active
       }
     )

@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className="mt-8 flex justify-center gap-4">
           <a
-            href="/Adnane_Chaikhi_CV.pdf"
+            href="/cv.pdf"
             download
             className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full font-semibold text-white transition"
           >

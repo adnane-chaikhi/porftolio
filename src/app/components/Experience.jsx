@@ -6,27 +6,33 @@ const experiences = [
   {
     company: 'Affe',
     role: 'Frontend Developer',
-    period: '2023 – Present',
-    description: 'Built scalable React interfaces with Tailwind and Next.js, focused on performance and UI polish.',
+    period: '2022',
+    description: 'Developed a modern and responsive website for Affe, a non-profit supporting children and women, using React and Tailwind CSS.',
   },
   {
     company: 'Sonegoce',
     role: 'Fullstack Developer',
-    period: '2021 – 2023',
-    description: 'Developed and deployed REST APIs with Spring Boot and integrated them into React apps.',
+    period: '2023– 2024',
+    description: 'Built a custom WordPress website for Sonegoce, a lighting company, including tailored plugins with PHP and advanced CSS/JS customizations.',
   },
   {
-    company: 'CodeLab',
-    role: 'Backend Developer',
-    period: '2020 – 2021',
-    description: 'Worked on scalable backend architecture, database modeling, and security protocols.',
+    company: 'Azuuuca',
+    role: 'Fullstack Developer',
+    period: '2024',
+    description: 'Developed a fullstack travel booking platform for Azuuuca (France) using PHP, MySQL, HTML, Tailwind CSS, JavaScript, and Git. The project included a dynamic homepage and an admin dashboard to manage bookings, trips, and client data.',
   },
   {
-    company: 'TechNest',
-    role: 'Intern Developer',
-    period: '2019 – 2020',
-    description: 'Contributed to internal tools and automation scripts using Node.js and MongoDB.',
+    company: 'Greenam',
+    role: 'Fullstack Developer',
+    period: '2024',
+    description: 'Led the development of a responsive website for GREENAM, a solar energy company. Implemented dynamic features to boost user engagement, ensured performance and security compliance, and collaborated with cross-functional teams. Tech stack: PHP, MySQL, JS, HTML5, CSS3, SASS, WordPress..',
   },
+  {
+    company: 'WORK IT ALL ',
+    role: 'Fullstack Developer',
+    period: '2025',
+    description: "Built a custom dashboard to manage employees, vehicles, and car-related billing, streamlining operations for a construction/services company. Also enhanced the companywebsite (www.workitall.ma) for better functionality and UX.Tech stack: PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap",
+  }
 ]
 
 export default function Experience() {

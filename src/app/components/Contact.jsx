@@ -1,8 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xrbkzqdd");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <section id="contact" className="min-h-screen bg-[#0f1117] text-green-400 px-6 py-10 font-mono">
       <div className="max-w-4xl mx-auto border border-gray-800 bg-[#0e1015] rounded-lg shadow-xl overflow-hidden">
@@ -15,7 +20,7 @@ export default function Contact() {
         </div>
 
         {/* Form */}
-        <motion.form
+        <motion.form onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -24,9 +29,13 @@ export default function Contact() {
         >
           <div className="flex flex-col md:flex-row gap-6">
             <div className="w-full">
+    
+              
+              
               <label className="block mb-1">// full name</label>
               <input
                 type="text"
+                name='name'
                 placeholder="Adnane Chaikhi"
                 className="w-full bg-[#101318] border border-green-700 px-4 py-3 rounded-md text-green-100 placeholder-green-500 outline-none focus:ring-2 focus:ring-green-400"
               />
@@ -35,6 +44,7 @@ export default function Contact() {
               <label className="block mb-1">// email address</label>
               <input
                 type="email"
+                name="email"
                 placeholder="codervdnane@gmail.com"
                 className="w-full bg-[#101318] border border-green-700 px-4 py-3 rounded-md text-green-100 placeholder-green-500 outline-none focus:ring-2 focus:ring-green-400"
               />
@@ -45,6 +55,7 @@ export default function Contact() {
             <label className="block mb-1">// subject</label>
             <input
               type="text"
+              name='subject'
               placeholder="Say hello or propose a project"
               className="w-full bg-[#101318] border border-green-700 px-4 py-3 rounded-md text-green-100 placeholder-green-500 outline-none focus:ring-2 focus:ring-green-400"
             />
@@ -53,6 +64,7 @@ export default function Contact() {
           <div>
             <label className="block mb-1">// message</label>
             <textarea
+              name='textarea'
               placeholder="Write your message here..."
               rows="5"
               className="w-full bg-[#101318] border border-green-700 px-4 py-3 rounded-md text-green-100 placeholder-green-500 outline-none focus:ring-2 focus:ring-green-400"
@@ -66,7 +78,9 @@ export default function Contact() {
             >
               sendMessage();
             </button>
+            
           </div>
+        
         </motion.form>
       </div>
     </section>

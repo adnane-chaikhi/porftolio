@@ -2,7 +2,7 @@
 
 import useScrollSpy from '../hooks/useScrollSpy'
 
-const sections = ['home', 'about', 'skills', 'projects', 'contact']
+const sections = ['home', 'about', 'skills','experience', 'projects', 'contact']
 
 export default function ScrollTimeline() {
   const active = useScrollSpy(sections)
@@ -27,7 +27,7 @@ export default function ScrollTimeline() {
       ))}
 
       {/* Vertical line */}
-      <div className="absolute top-0 left-1/2 h-full w-px bg-gray-500 -z-10" />
+      <div className="absolute top-[11px] left-1/2 h-[93%] w-px bg-gray-500 -z-10 translate-x-[-50%]"  />
     </div>
   )
 }

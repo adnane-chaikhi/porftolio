@@ -1,33 +1,40 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa'
-import { SiTailwindcss, SiJavascript, SiNextdotjs, SiSpringboot, SiMongodb } from 'react-icons/si'
+import {
+  FaReact, FaNodeJs, FaGitAlt, FaDocker, FaAws, FaPhp,
+} from 'react-icons/fa'
+import {
+  SiTailwindcss, SiNextdotjs, SiSpringboot, SiMongodb,
+  SiMysql, SiPostgresql
+} from 'react-icons/si'
 
 const skills = [
   { name: 'React', icon: <FaReact className="text-blue-400" /> },
   { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
   { name: 'Spring Boot', icon: <SiSpringboot className="text-green-500" /> },
-  { name: 'MongoDB', icon: <SiMongodb className="text-green-400" /> },
-  { name: 'JavaScript', icon: <SiJavascript className="text-yellow-400" /> },
-  { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
-  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: 'PHP', icon: <FaPhp className="text-indigo-300" /> },
+  { name: 'MySQL', icon: <SiMysql className="text-blue-400" /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-300" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
+  { name: 'AWS', icon: <FaAws className="text-yellow-300" /> },
+  { name: 'Docker', icon: <FaDocker className="text-blue-400" /> },
   { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
+  { name: 'MongoDB', icon: <SiMongodb className="text-green-400" /> },
   { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
 ]
 
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen bg-gray-950 text-white px-6 py-24 flex flex-col items-center">
+    <section id="skills" className="min-h-[60vh] bg-gray-950 px-6 py-24 flex flex-col items-center font-mono">
       <motion.h2
-        className="text-4xl font-bold text-cyan-400 mb-12"
+        className="text-4xl font-bold text-lime-400 mb-12"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        My Skills
+        // Tech Stack
       </motion.h2>
 
       <motion.div

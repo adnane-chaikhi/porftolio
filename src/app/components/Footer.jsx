@@ -30,9 +30,8 @@ export default function Footer() {
         <div className="flex flex-col items-start md:items-end gap-3">
           <h4 className="text-lime-400 font-semibold">// Connect</h4>
           <div className="flex gap-5 text-xl mt-2">
-            <a href="https://github.com/yourprofile" target="_blank" className="hover:text-lime-300"><FaGithub /></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" className="hover:text-lime-300"><FaLinkedin /></a>
-            <a href="mailto:your@email.com" className="hover:text-lime-300"><FaEnvelope /></a>
+            <a href="https://www.linkedin.com/in/adnane-chaikhi/" target="_blank" className="hover:text-lime-300"><FaLinkedin /></a>
+            <a href="mailto:codervdnane@gmail.com" className="hover:text-lime-300"><FaEnvelope /></a>
           </div>
         </div>
       </div>
